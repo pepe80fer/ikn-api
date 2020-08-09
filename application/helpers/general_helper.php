@@ -31,7 +31,8 @@ function fields_relation($fields, $data)
         if( ! empty($filter))
         {
             foreach($fields AS $key => $field) {
-                $data_final[ $field ] = $filter[ $key ];
+                if(isset($filter[ $key ]))
+                    $data_final[ $field ] = $filter[ $key ];
             }
         }
     }

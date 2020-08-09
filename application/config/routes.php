@@ -53,9 +53,17 @@ $route['default_controller'] = 'Wellcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['categories'] = 'Categories/categorie';
+$route['categories/(:num)'] = 'Categories/categorie/$1';
+$route['colors'] = 'Colors/color';
 $route['genders'] = 'Genders/gender';
 $route['identifications'] = 'Identifications/identification';
+$route['marks'] = 'Marks/mark';
+$route['productTypes'] = 'ProductTypes/productType';
+$route['productTypes/(:num)'] = 'ProductTypes/productType/$1';
 $route['profiles'] = 'Profiles/profile';
 $route['profiles/(:num)'] = 'Profiles/profile/$1';
 $route['users'] = 'Users/user';
 $route['users/(:num)'] = 'Users/user/$1';
+
+$route['relationCategorie'] = 'Categories/relation';
